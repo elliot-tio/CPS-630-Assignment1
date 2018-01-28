@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Art Gallery</title>
   <link rel="stylesheet" href="assignment1-team20.css">
+  <script type="text/javascript" src="assignment1-team20.js" charset="utf-8"></script>
+
+  </script>
 </head>
 <body>
 
@@ -14,27 +17,29 @@
   <div class="options-bar">
     <ul class="nav-bar">
       <label for="artworks">Artworks:</label>
-      <li><select id="artworks">
-        <option value="art1" onchange="populateWindow()">Art 1</option>
-        <option value="art2" onchange="populateWindow()">Art 2</option>
-        <option value="art3" onchange="populateWindow()">Art 3</option>
-        <option value="art4" onchange="populateWindow()">Art 4</option>
-        <option value="art5" onchange="populateWindow()">Art 5</option>
+      <li><select id="artworks" onchange="populateWindow(this)">
+        <option value="pick">Pick an Artwork</option>
+        <option value="art1">Art 1</option>
+        <option value="art2">Art 2</option>
+        <option value="art3">Art 3</option>
+        <option value="art4">Art 4</option>
+        <option value="art5">Art 5</option>
       </select></li>
       <label for="artists">Artists:</label>
-      <li><select id="artists">
-        <option value="artist1" onchange="populateWindow()">Artist 1</option>
-        <option value="artist2" onchange="populateWindow()">Artist 2</option>
-        <option value="artist3" onchange="populateWindow()">Artist 3</option>
-        <option value="artist4" onchange="populateWindow()">Artist 4</option>
-        <option value="artist5" onchange="populateWindow()">Artist 5</option>
+      <li><select id="artists" onchange="populateWindow(this)">
+        <option value="pick">Pick an Artist</option>
+        <option value="artist1">Artist 1</option>
+        <option value="artist2">Artist 2</option>
+        <option value="artist3">Artist 3</option>
+        <option value="artist4">Artist 4</option>
+        <option value="artist5">Artist 5</option>
       </select></li>
     </ul>
   </div>
 
   <div class="window-container">
-    <div class="left-window" id="left-window">img placeholder</div>
-    <div class="right-window" id="right-window">info placeholder</div>
+    <div class="left-window" id="left-window">Pick an Artwork or Artist from the lists above.</div>
+    <div class="right-window" id="right-window">Pick an Artwork or Artist from the lists above.</div>
   </div>
 
   <div class="container">
