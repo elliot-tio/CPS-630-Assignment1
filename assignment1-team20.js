@@ -56,6 +56,10 @@ function populateWindow(sel){
       htmlContentRight = "art 5";
       break;
     }
+    case 'pick': {
+      htmlContentLeft = "Pick an Artwork or Artist from the lists above.";
+      htmlContentRight = "Pick an Artwork or Artist from the lists above.";
+    }
   }
   leftWindow.innerHTML = htmlContentLeft;
   rightWindow.innerHTML = htmlContentRight;
